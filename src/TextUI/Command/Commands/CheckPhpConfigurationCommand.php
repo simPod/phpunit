@@ -94,7 +94,7 @@ final readonly class CheckPhpConfigurationCommand implements Command
 
             if (
                 $actualValue === $setting['expectedValue'] ||
-                (is_array($setting['expectedValue']) && in_array($actualValue, $setting['expectedValue'], true))
+                (is_array($setting['expectedValue']) && in_array($actualValue, $setting['expectedValue']))
             ) {
                 $check = $this->ok();
             } else {
