@@ -8,7 +8,7 @@ if (!extension_loaded('xdebug')) {
 --INI--
 display_errors=1
 display_startup_errors=1
-error_reporting=-1
+error_reporting=E_WARNING
 xdebug.show_exception_trace=0
 zend.assertions=1
 assert.exception=1
